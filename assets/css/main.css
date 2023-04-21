@@ -3417,3 +3417,6 @@ input, select, textarea {
 		max-width: 100%;
 	  }
 
+.documentation{
+	border-bottom: none;
+}
