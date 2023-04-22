@@ -31,42 +31,123 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
+					<a href="#" class="image poro"><img src="images/thumbs/hr.jpg" alt="" /></a>
 				</div>
 			</header>
     
 		<!-- Main -->
 			<div id="main">
 				<!-- One -->
-                <section id="adhoc">
+                <section id="#">
                     <header class="major">
-                        <h1>Employee Attrition Analysis</h1>
+                        <h1>HR Analysis</h1>
                     </header>
-                    <h4><ul>
-                        Domain : Human Resourse<br>
-						Function : Executive Management<br>
-                        Problem Statement :<br>
-                        Objective : <br>
-                        Approach : <br>
-                        Tools : <br>
+					<article class="col-6 col-12-small work-item">
+						<h3>Domain :Human Resources</h3>
+						<h3>Function :</h3>
+						<p>The main function of this project is to analyze employee attrition and provide insights into 
+							the reasons behind it. It involves data cleaning, transformation, and analysis to identify 
+							patterns and trends that could inform strategies to reduce employee attrition.</p><h3></h3>
+						<h3>Problem Statement</h3>
+						<p>Employee attrition is a significant problem for many organizations. High attrition rates 
+							can lead to a loss of productivity, decreased morale, and increased costs associated with 
+							hiring and training new employees. However, understanding the reasons behind employee 
+							attrition can be challenging, especially if an organization lacks a centralized system to track employee data.</p>
+						<h3></h3>
+						<h3>Objective:</h3>
+						
+						<p>Analyze employee attrition and identify key factors that contribute to it. This type analysis will help 
+							organizations develop effective strategies to reduce employee attrition and retain talented employees.<br>
+							The project aims to provide insights based on these 10 analysis requests given by Human Resources</p>
+							<h5 id="toggle-buttonn">Click to view Requests <i class="fas fa-chevron-down"></i></h5>
+							<div id="task-list">
+  							<ul>
+							    <li>What is the Employee Count?</li>
+							    <li>How many employee have left the company?</li>
+							    <li>What is the rate of attrition?</li>
+							    <li>Find the number of active employees after attrition.</li>
+							    <li>What is the average age of employees that left the company and the gender?</li>
+							    <li>Find the department wise attrition.</li>
+							    <li>Number of employees by age group.</li>
+							    <li>Find the job satisfaction rating.</li>
+							    <li>Attrition by qualifications.</li>
+							    <li>Find the attrition rate by gender.</li>
+							  </ul>
+							</div>
 
-                    </ul></h4>
-                <h2>TASKS</h2>
-                    <ul>
-                        
-                      </ul>
-                                           
-                </section>
+<script>
+  var taskList = document.getElementById("task-list");
+  var toggleButtonn = document.getElementById("toggle-buttonn");
+  var isExpanded = localStorage.getItem("isExpanded") === "true";
 
-				<!-- Two -->
-					<section id="two">
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<div style="display: flex; align-items: center;">
-							<a href="https://github.com/TrevorA1i/PortfolioProjects/blob/main/HR%20Analysis.sql" style="color: rgb(25, 189, 31); font-weight: bold; padding-right: 1em">Code</a>
-								</div>
-							</article>
+  if (isExpanded) {
+    taskList.style.display = "block";
+    toggleButtonn.innerHTML = "Close <i class='fas fa-chevron-up'></i>";
+  } else {
+    taskList.style.display = "none";
+    toggleButtonn.innerHTML = "Click to view Requests <i class='fas fa-chevron-down'></i>";
+  }
+
+  toggleButtonn.addEventListener("click", function () {
+    isExpanded = !isExpanded;
+    localStorage.setItem("isExpanded", isExpanded);
+
+    if (isExpanded) {
+      taskList.style.display = "block";
+      toggleButtonn.innerHTML = "Close <i class='fas fa-chevron-up'></i>";
+    } else {
+      taskList.style.display = "none";
+      toggleButtonn.innerHTML = "Click to view Requests <i class='fas fa-chevron-down'></i>";
+    }
+  });
+</script>
+							
+						<h3></h3>
+						<h3>Methodology :</h3>
+						<p>The methodology for this project will involve the folloeing:
+							<li>Data Collection: Collecting employee data, including age, gender, department, job satisfaction, 
+							qualifications, and employment status.</li>
+							<li>Data Cleaning and Transformation: Cleaning and transforming the data to ensure accuracy and consistency.</li>
+							<li>Data Analysis: Analyzing the data to identify patterns and trends related to employee attrition.</li>
+							<li>Data Visualization: Creating visualizations to help stakeholders understand the data and its implications.</li>
+							</p>
+						
+						<h3></h3>
+						<h3>Deliverables :</h3>
+						<p>
+							<li>Cleaned and transformed employee data in a database format, ready for analysis.</li>
+							<li>Interactive dashboard that shows the insights generated from the analysis.</li>
+							<li>Report detailing the findings of the analysis, including key factors that contribute to employee attrition.</li>
+						</p>
+
+	<!--DOCUMENTS-->
+	<h3></h3>
+	<div style="display: flex; align-items: center;">
+		<a href="https://github.com/TrevorA1i/PortfolioProjects/blob/main/HR%20Analysis.sql" class="documentation" style="color: rgb(25, 189, 31); font-weight: bold; padding-right: 1em">Code</a>
+		<a href="" class="documentation" style="color: rgb(25, 189, 31); font-weight: bold; padding-right: 1em;">Documentation</a>
+		
+		  
+		  <div class="dropdown">
+			<a id="toggle-button" class="documentation" style="color: rgb(25, 189, 31);"><span>Dashboard</span> <i class="fas fa-chevron-down"></i></a>
+			<div class="dropdown-content">
+			  <a href="#" class="documentation" style="color: rgb(0, 0, 0);">Tablea Dashboard</a>
+			  <a href="https://1drv.ms/x/s!Ao8lbkieFWAmgiHfnL6qikVxVHDy?e=h1HJvp" class="documentation" style="color: rgb(0, 0, 0);">Excel Dashboard</a>
+			</div>
+		  </div>
+		  
+		  <script>
+			var toggleButton = document.getElementById("toggle-button");
+			var dropdownContent = toggleButton.nextElementSibling;
+			toggleButton.addEventListener("click", function() {
+			  toggleButton.querySelector('.fa-chevron-down').classList.toggle('fa-chevron-up');
+			  toggleButton.querySelector('span').innerText = toggleButton.querySelector('span').innerText === 'Dashboard' ? 'Close' : 'Dashboard';
+			  dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+			});
+		  </script>
+
 						</div>
-					</section>
+					</article>                                          
+                </section>
 
 					<!----Back ----->
 				<div class="icons">
