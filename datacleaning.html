@@ -30,7 +30,9 @@
 
 		<!-- Header -->
 			<header id="header">
-				<div class="inner"></div>
+				<div class="inner">
+					<a href="#" class="image poro"><img src="images/thumbs/clean.PNG" alt="" /></a>
+				</div>
 			</header>
     
 		<!-- Main -->
@@ -66,31 +68,45 @@
 					<h3>Deliverables :</h3>
 					<p>The deliverables will be a cleaned and transformed dataset that is ready for analysis. 
 						The dataset will be stored in a SQL Server database, and we will provide documentation on the data cleaning process 
-						and the structure of the dataset. <br>
-						Additionally, a dashboard providing insights or visualizations for clean, transformed and updated dataset.</p>
-						<h3></h3>
-						<div style="display: flex; align-items: center;">
-							<a href="https://github.com/TrevorA1i/PortfolioProjects/blob/main/DataCleaning.sql" class="documentation" style="color: rgb(25, 189, 31); font-weight: bold; padding-right: 1em">View Code</a>
-							<a href="https://drive.google.com/file/d/1T5f_fAjOUFBRtb36tvcZb4e1et9Ajd4K/view?usp=share_link" class="documentation" style="color: rgb(25, 189, 31); font-weight: bold; padding-right: 1em;">Documentation</a>
-						  </div>
+						and the structure of the dataset.</p>
+						<p>And two separate dashboard designs - Excel & Tableau</p>
+				
+	<!--DOCUMENTS-->
+	<h3></h3>
+	<div style="display: flex; align-items: center;">
+		<a href="https://github.com/TrevorA1i/PortfolioProjects/blob/main/DataCleaning.sql" class="documentation" style="color: rgb(25, 189, 31); font-weight: bold; padding-right: 1em">Code</a>
+		<a href="https://drive.google.com/file/d/1T5f_fAjOUFBRtb36tvcZb4e1et9Ajd4K/view?usp=share_link" class="documentation" style="color: rgb(25, 189, 31); font-weight: bold; padding-right: 1em;">Documentation</a>
+		
+		  
+		  <div class="dropdown">
+			<a id="toggle-button" class="documentation" style="color: rgb(25, 189, 31);"><span>Dashboard</span> <i class="fas fa-chevron-down"></i></a>
+			<div class="dropdown-content">
+			  <a href="#" class="documentation" style="color: rgb(0, 0, 0);">Tablea Dashboard</a>
+			  <a href="#" class="documentation" style="color: rgb(0, 0, 0);">Excel Dashboard</a>
+			</div>
+		  </div>
+		  
+		  <script>
+			var toggleButton = document.getElementById("toggle-button");
+			var dropdownContent = toggleButton.nextElementSibling;
+			toggleButton.addEventListener("click", function() {
+			  toggleButton.querySelector('.fa-chevron-down').classList.toggle('fa-chevron-up');
+			  toggleButton.querySelector('span').innerText = toggleButton.querySelector('span').innerText === 'Dashboard' ? 'Close' : 'Dashboard';
+			  dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+			});
+		  </script>
+
+						</div>
                 </article>                           
+				
                 </section>
 
-				<!-- Two -->
-					<section id="two">
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								
-							</article>
-						</div>
-					</section>
-
-					<!----Back ----->
-					<div class="icons">
-						<ul class="actions">
-						  <li><a href="#" class="header back">Back</a></li>
-						</ul>
-					  </div>
+		<!----Back ----->
+			<div class="icons">
+				<ul class="actions">
+					 <li><a href="#" class="header back">Back</a></li>
+					</ul>
+			</div>
 
 		<!-- Footer -->
 		<footer id="footer">
