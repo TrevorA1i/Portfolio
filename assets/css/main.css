@@ -3417,6 +3417,44 @@ input, select, textarea {
 		max-width: 100%;
 	  }
 
+
+
 .documentation{
 	border-bottom: none;
 }
+		.dropdown {
+			  position: relative;
+	     	  display: inline-block;
+		}
+							  
+		.dropdown-content {
+			  display: none;
+			  position: absolute;
+			  top: 100%;
+			  left: 0;
+			  z-index: 1;
+			  min-width: 200px;
+			  background-color: #fff;
+			  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+			  padding: 12px 16px;
+			  border-radius: 5px;
+			  margin-top: 5px;
+		}
+								
+		.dropdown-content a {
+			  display: block;
+			  margin-bottom: 5px;
+		}
+			  
+		#toggle-button {
+			  cursor: pointer;
+			  color: rgb(108, 147, 109);
+			  font-weight: bold;
+			  padding-right: 1em;
+		}
+		#toggle-buttonn {
+			cursor: pointer;
+			color: rgb(108, 147, 109);
+			font-weight: bold;
+			padding-right: 1em;
+	  }
