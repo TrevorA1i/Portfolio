@@ -32,40 +32,121 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
+					<a href="#" class="image poro"><img src="images/thumbs/sales.jpg" alt="" /></a>
+					<h3></h3>
+					<h2>Sales and Retail Analysis</h2>
 				</div>
 			</header>
     
 		<!-- Main -->
 			<div id="main">
 				<!-- One -->
-                <section id="adhoc">
+                <section id="#">
                     <header class="major">
-                        <h1>Sales and Marketing</h1>
                     </header>
-                    <h4><ul>
-                        Domain : Human Resourse<br>
-						Function : Executive Management<br>
-                        Problem Statement :<br>
-                        Objective : <br>
-                        Approach : <br>
-                        Tools : <br>
+					<article class="col-6 col-12-small work-item">
+						<h3>Domain: Sales and Retail </h3>
+						<h3>Function: Sales Analysis</h3>
+						<h3>Problem Statement</h3>
+						<p>A bike store wants to analyze their sales data to identify trends and insights that will 
+							help them improve their business operations. They have data on their customers, orders, 
+							products, and sales staff. They want to identify patterns in their sales data, such as 
+							revenue per month, revenue per state, revenue per brand, revenue per product, revenue 
+							per salesrep, and top 10 customers.</p>
+						<h3></h3>
+						<h3>Objective:</h3>
+						<p>The objective of this project is to analyze the bike store's sales data and provide 
+							insights that will help them improve their business operations. The project will 
+							extract data from the bike store's database and perform analysis to identify patterns 
+							and trends in their sales data. The insights gained will help the bike store make 
+							informed decisions about their business operations, such as which products to stock, 
+							which sales reps are performing well, and which customers are most valuable.</p>
 
-                    </ul></h4>
-                <h2>TASKS</h2>
-                    <ul>
-                        
-                      </ul>
-                                           
-                </section>
+						<h3></h3>
+						<h3>Methodology :</h3>
+						<p>To extract the data needed for analysis, SQL was used to join several tables from 
+							the bike store's database, including the orders, customers, order_items, products, 
+							categories, stores, staffs, and brands tables. The SQL code used to extract the 
+							data is shown above.<br>
+							The data was cleaned, preprocessed, and visualized to identify patterns and trends 
+							in the data. The insights gained from the analysis were then presented in a clear and
+							concise manner using visualizations and summaries
+						</p>
 
-				<!-- Two -->
-					<section id="two">
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								
-							</article>
+
+	<!--DOCUMENTS-->
+	<h3></h3>
+	<div style="display: flex; align-items: center;">
+		<a href="https://github.com/TrevorA1i/PortfolioProjects/blob/main/SalesAnalysis.sql" class="documentation" style="color: rgb(25, 189, 31); font-weight: bold; padding-right: 1em">Code</a>
+		<a href="" class="documentation" style="color: rgb(25, 189, 31); font-weight: bold; padding-right: 1em;">Documentation</a>
+		
+		  
+		  <div class="dropdown">
+			<a id="toggle-button" class="documentation" style="color: rgb(25, 189, 31);"><span>Dashboard</span> <i class="fas fa-chevron-down"></i></a>
+			<div class="dropdown-content">
+			  <a href="#dashboard" class="documentation" style="color: rgb(0, 0, 0);">Tableau Dashboard</a>
+			  <a href="" class="documentation" style="color: rgb(0, 0, 0);">Excel Dashboard</a>
+			</div>
+		  </div>
+		  
+		  <script>
+			var toggleButton = document.getElementById("toggle-button");
+			var dropdownContent = toggleButton.nextElementSibling;
+			toggleButton.addEventListener("click", function() {
+			  toggleButton.querySelector('.fa-chevron-down').classList.toggle('fa-chevron-up');
+			  toggleButton.querySelector('span').innerText = toggleButton.querySelector('span').innerText === 'Dashboard' ? 'Close' : 'Dashboard';
+			  dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+			});
+		  </script>
+
 						</div>
-					</section>
+					</article>                                          
+                </section>
+<section id="dashboard">
+
+		<div class='tableauPlaceholder' id='viz1682190397376' style='position: relative'>
+			<noscript><a href='#'>
+				<img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sa&#47;SalesExecutiveDashboard_16821084155230&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a>
+			</noscript>
+			<object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+				<param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+				<param name='name' value='SalesExecutiveDashboard_16821084155230&#47;Dashboard1' />
+				<param name='tabs' value='no' /><param name='toolbar' value='yes' />
+				<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sa&#47;SalesExecutiveDashboard_16821084155230&#47;Dashboard1&#47;1.png' /> 
+				<param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+				<param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' />
+			</object>
+		</div>                
+	<script type='text/javascript'>
+		    var divElement = document.getElementById('viz1682190397376');                    
+			var vizElement = divElement.getElementsByTagName('object')[0]; 
+
+		if ( divElement.offsetWidth > 800 ) { 
+			vizElement.style.minWidth='420px';
+			vizElement.style.maxWidth='1150px';
+			vizElement.style.width='100%';
+			vizElement.style.minHeight='127px';
+			vizElement.style.maxHeight='687px';
+			vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+			} 
+		else if ( divElement.offsetWidth > 500 ) { 
+			vizElement.style.minWidth='420px';
+			vizElement.style.maxWidth='1150px';
+			vizElement.style.width='100%';
+			vizElement.style.minHeight='127px';
+			vizElement.style.maxHeight='687px';
+			vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+			} 
+		else { 
+			vizElement.style.width='100%';vizElement.style.height='1977px';
+			}                     
+			var scriptElement = document.createElement('script');          
+
+		scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+		vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+	</script>
+
+</section>
 
 					<!----Back ----->
 				<div class="icons">
