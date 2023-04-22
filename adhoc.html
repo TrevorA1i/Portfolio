@@ -56,17 +56,13 @@
 						</p><h3></h3>
 						<h3>Objective:</h3>
 						<style>
-							#task-list {
-								display: none;
-							}
-							#toggle-button {
-								cursor: pointer;
-							}
+							
 						</style>
 						<p>Analyze the sales data of Atliq Exclusive and provide insights into various aspects of the sales data. 
 							The project aims to achieve the 10 Ad Hoc requests given by the company to which the business needs insights:</p>
-						<h5 id="toggle-button">Click to view Ad Hoc Requests  <i class="fas fa-chevron-down"></i></h5>
-						<ul id="task-list">
+						<h5 id="toggle-buttonn">Click to view Ad Hoc Requests  <i class="fas fa-chevron-down"></i></h5>
+						<div id="task-list">
+						<ul>
 							<li>Provide the list of markets in which customer "Atliq Exclusive" operates its business in the APAC region.</li>
 							<li>What is the percentage of unique product increase in 2021 vs. 2020?</li>
 							<li>Provide the unique product counts for each segments.</li>
@@ -78,21 +74,35 @@
 							<li>Which channel helped to bring more gross sales in the fiscal year 2021 and the percentage of contribution?</li>
 							<li>What are the Top 3 products in each division that have a high total_sold_quantity in the fiscal_year 2021?</li>
 						</ul>
-						
-						
+						</div>
 						<script>
 							var taskList = document.getElementById("task-list");
-							var toggleButton = document.getElementById("toggle-button");
-							toggleButton.addEventListener("click", function() {
-								if (taskList.style.display === "none") {
-									taskList.style.display = "block";
-									toggleButton.innerHTML = 'Click to view Ad Hoc Requests <i class="fas fa-chevron-up"></i> ';
-								} else {
-									taskList.style.display = "none";
-									toggleButton.innerHTML = 'Click to view Ad Hoc Requests <i class="fas fa-chevron-down"></i> ';
-								}
+							var toggleButtonn = document.getElementById("toggle-buttonn");
+							var isExpanded = localStorage.getItem("isExpanded") === "true";
+						  
+							if (isExpanded) {
+							  taskList.style.display = "block";
+							  toggleButtonn.innerHTML = "Close <i class='fas fa-chevron-up'></i>";
+							} else {
+							  taskList.style.display = "none";
+							  toggleButtonn.innerHTML = "Click to view Requests <i class='fas fa-chevron-down'></i>";
+							}
+						  
+							toggleButtonn.addEventListener("click", function () {
+							  isExpanded = !isExpanded;
+							  localStorage.setItem("isExpanded", isExpanded);
+						  
+							  if (isExpanded) {
+								taskList.style.display = "block";
+								toggleButtonn.innerHTML = "Close <i class='fas fa-chevron-up'></i>";
+							  } else {
+								taskList.style.display = "none";
+								toggleButtonn.innerHTML = "Click to view Requests <i class='fas fa-chevron-down'></i>";
+							  }
 							});
-						</script>
+						  </script>
+						
+						
 						<h3></h3>
 						<h3>Methodology :</h3>
 						<p>The methodology for this project involves data collection, data cleaning, data transformation, and data analysis. 
@@ -113,24 +123,43 @@
 							  and the top 3 products in each division that have a high total sold quantity in the fiscal_year 2021.<br>
 							  All summarized in a dashboard with visualizations in an easy-to-understand format.
 						</p>
+
+	<!--DOCUMENTS-->
+	<h3></h3>
+	<div style="display: flex; align-items: center;">
+		<a href="" class="documentation" style="color: rgb(25, 189, 31); font-weight: bold; padding-right: 1em">Code</a>
+		<a href="" class="documentation" style="color: rgb(25, 189, 31); font-weight: bold; padding-right: 1em;">Documentation</a>
+		
+		  
+		  <div class="dropdown">
+			<a id="toggle-button" class="documentation" style="color: rgb(25, 189, 31);"><span>Dashboard</span> <i class="fas fa-chevron-down"></i></a>
+			<div class="dropdown-content">
+			  <a href="#" class="documentation" style="color: rgb(0, 0, 0);">Tablea Dashboard</a>
+			  <a href="#" class="documentation" style="color: rgb(0, 0, 0);">Excel Dashboard</a>
+			</div>
+		  </div>
+		  
+		  <script>
+			var toggleButton = document.getElementById("toggle-button");
+			var dropdownContent = toggleButton.nextElementSibling;
+			toggleButton.addEventListener("click", function() {
+			  toggleButton.querySelector('.fa-chevron-down').classList.toggle('fa-chevron-up');
+			  toggleButton.querySelector('span').innerText = toggleButton.querySelector('span').innerText === 'Dashboard' ? 'Close' : 'Dashboard';
+			  dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+			});
+		  </script>
+
+						</div>
 					</article>                                          
                 </section>
 
-				<!-- Two -->
-					<section id="two">
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								
-							</article>
-						</div>
-					</section>
 
-					<!----Back ----->
-					<div class="icons">
-						<ul class="actions">
-						  <li><a href="#" class="header back">Back</a></li>
-						</ul>
-					  </div>
+		<!----Back ----->
+			<div class="icons">
+				<ul class="actions">
+					 <li><a href="#" class="header back">Back</a></li>
+					</ul>
+			</div>
 
 		<!-- Footer -->
 		<footer id="footer">
