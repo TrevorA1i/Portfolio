@@ -1,33 +1,17 @@
-Strata by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Welcome to my portfolio website! This website showcases my skills, projects, and experiences as a [insert your profession or field]. The website is hosted on GitHub Pages and can be accessed at [insert your website URL].
 
+Features
+The website features a modern, minimalist design and includes the following sections:
 
-A simple, minimalist template that actually began life as an unused redesign of my
-personal site. Includes a (configurable) parallax background effect, Poptrox-powered
-lightbox gallery, a bunch of pre-styled elements, and Sass sources for the Sass-inclined.
-
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = Not included)
-
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
-
-AJ
-aj@lkn.io | @ajlkn
-
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
-
+Home: An introduction to myself and my professional background.
+Projects: A showcase of my projects with descriptions, images, and links to GitHub repositories or live demos.
+Contact: A contact form for anyone interested in getting in touch with me.
 
 Credits:
-
 	Demo Images:
 		Unsplash (unsplash.com)
-
 	Icons:
 		Font Awesome (fontawesome.io)
-
 	Other:
 		jQuery (jquery.com)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
