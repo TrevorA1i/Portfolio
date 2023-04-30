@@ -1,4 +1,4 @@
-Welcome to my portfolio website! This website showcases my skills, projects, and experiences as a [insert your profession or field]. The website is hosted on GitHub Pages and can be accessed at [insert your website URL].
+Welcome to my portfolio website! This website showcases my skills, projects, and experiences as a Data Analyst. The website is hosted on GitHub Pages and can be accessed at https://trevora1i.github.io/portfolio/
 
 Features
 The website features a modern, minimalist design and includes the following sections:
