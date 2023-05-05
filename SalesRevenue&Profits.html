@@ -41,14 +41,70 @@
                         <h1>Sales Revenue & Profits Analysis</h1>
                     </header>
 					<article class="col-6 col-12-small work-item">
-						<h3>Domain : Sales & Marketing</h3>
+						<h3>Domain :  Sales & Marketing</h3>
 						<h3>Function :</h3>
-						<p>
+						<p>Performed India based hardware company sales insights
                         </p><h3></h3>
 						<h3>Project Overview:</h3>
                         <p>Developed a Tableau dashboard to perform analysis, producing quantitative 
                             visualizations in Tableau to draw valuable insights based on different 
                             parameters affecting the company performance year on year and further provide business solutions.
+                        </p><h3></h3>
+						<h3>Problem Statements:</h3>
+						
+						<p>Sales director wants to know the performance of the company in various Indian states & accordingly provide some discount.</p>
+							<h5 id="toggle-buttonn">Click to view Requests <i class="fas fa-chevron-down"></i></h5>
+							<div id="task-list">
+  							<ul>
+								<li>Revenue breakdown by cities.</li>
+								<li>Revenue brekdown by years & months.</li>
+								<li>Top 5 customers by revenue & sales quantity.</li>
+								<li>Top 5 Products by revenue.</li>
+								<li>Net Profit & Profit Margin by Market</li>
+							  </ul>
+							</div>
+
+<script>
+  var taskList = document.getElementById("task-list");
+  var toggleButtonn = document.getElementById("toggle-buttonn");
+  var isExpanded = localStorage.getItem("isExpanded") === "true";
+
+  if (isExpanded) {
+    taskList.style.display = "block";
+    toggleButtonn.innerHTML = "Close <i class='fas fa-chevron-up'></i>";
+  } else {
+    taskList.style.display = "none";
+    toggleButtonn.innerHTML = "Click to view Requests <i class='fas fa-chevron-down'></i>";
+  }
+
+  toggleButtonn.addEventListener("click", function () {
+    isExpanded = !isExpanded;
+    localStorage.setItem("isExpanded", isExpanded);
+
+    if (isExpanded) {
+      taskList.style.display = "block";
+      toggleButtonn.innerHTML = "Close <i class='fas fa-chevron-up'></i>";
+    } else {
+      taskList.style.display = "none";
+      toggleButtonn.innerHTML = "Click to view Requests <i class='fas fa-chevron-down'></i>";
+    }
+  });
+</script>
+						<h3>Methodology:</h3>
+                        <p>Developed ETL mappings using SQL to extract the data from unstructured data and transformed it 
+							to the staging area to conduct data cleaning and design star schema data model on Tableau.
+
+							Developed a Tableau dashboard to perform analysis, producing quantitative visualizations 
+							in Tableau to draw valuable insights based on different parameters affecting the company 
+							performance year on year and further provide business solutions.
+                        </p><h3></h3>
+						<h3>Success Criteria:</h3>
+                        <p>Developed ETL mappings using SQL to extract the data from unstructured data and transformed it 
+							to the staging area to conduct data cleaning and design star schema data model on Tableau.
+
+							Developed a Tableau dashboard to perform analysis, producing quantitative visualizations 
+							in Tableau to draw valuable insights based on different parameters affecting the company 
+							performance year on year and further provide business solutions.
                         </p><h3></h3>
                         <h3>Screenshots</h3>
                         <div class="box alt">
